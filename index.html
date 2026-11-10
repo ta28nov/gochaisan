@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>GÓC HẢI SẢN 2026 — Hải Sản Đông Lạnh Biên Hòa</title>
+  <!-- Đã sửa đường dẫn Tailwind CDN chuẩn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Work Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            ocean: {
+              950: '#071126',
+              900: '#0D1E40',
+              800: '#152C5B',
+              700: '#1F3E7A'
+            },
+            cream: {
+              50: '#FDF8F2',
+              100: '#F5E6D3',
+              200: '#E6CFB3',
+              300: '#D4B48C'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    *, body, h1, h2, h3, h4, p, span, a, button, input, select, textarea, table {
+      font-family: 'Work Sans', system-ui, -apple-system, sans-serif !important;
+    }
+    body {
+      background-color: #071126;
+      color: #F5E6D3;
+      overflow-x: hidden;
+    }
+    .glass-panel {
+      background: linear-gradient(145deg, rgba(21, 44, 91, 0.92) 0%, rgba(13, 30, 64, 0.96) 100%);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(245, 230, 211, 0.22);
+      box-shadow: 0 14px 32px -10px rgba(0, 0, 0, 0.65);
+    }
+    .glass-panel-contrast {
+      background: linear-gradient(145deg, #FDF8F2 0%, #F5E6D3 100%);
+      color: #071126;
+      border: 2px solid #D4B48C;
+      box-shadow: 0 20px 42px -12px rgba(0, 0, 0, 0.5);
+    }
+    .glass-nav {
+      background: rgba(7, 17, 38, 0.98);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1.5px solid rgba(245, 230, 211, 0.22);
+    }
+    .dish-glow-card {
+      border: 1.5px solid rgba(245, 230, 211, 0.22);
+      box-shadow: 0 14px 32px -10px rgba(0, 0, 0, 0.65);
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .dish-glow-card:hover {
+      transform: translateY(-4px);
+      border-color: #FDF8F2 !important;
+      box-shadow: 0 0 28px rgba(253, 248, 242, 0.4), 0 0 12px rgba(245, 230, 211, 0.3);
+    }
+    .nav-pill-hover {
+      background-color: #0D1E40;
+      color: #FDF8F2;
+      border: 1px solid rgba(245, 230, 211, 0.2);
+      transition: all 0.25s ease;
+    }
+    .nav-pill-hover:hover {
+      background-color: #F5E6D3 !important;
+      color: #071126 !important;
+      border-color: #D4B48C !important;
+    }
+    @keyframes gradientRightToLeft {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+    .badge-2026-rtl {
+      background: linear-gradient(270deg, #F5E6D3, #D4B48C, #1F3E7A, #0D1E40, #D4B48C, #F5E6D3);
+      background-size: 200% 100%;
+      animation: gradientRightToLeft 3.5s linear infinite;
+      color: #FFFFFF;
+      border: 1px solid rgba(245, 230, 211, 0.75);
+      text-shadow: 0 1px 2px rgba(7, 17, 38, 0.85);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-cream-200 selection:text-ocean-950">
+
+  <!-- HEADER -->
+  <header class="glass-nav sticky top-0 z-40 transition-all">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3">
+      <div class="flex items-center justify-between gap-3">
+        <!-- Logo & Thương hiệu -->
+        <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+          <div class="flex items-center justify-center h-14 w-14 sm:h-16 sm:w-16 shrink-0 overflow-hidden rounded-2xl border-2 border-cream-200 bg-ocean-900 shadow-xl">
+            <span class="text-xs font-black text-cream-100 text-center leading-tight">GÓC<br/>HẢI SẢN</span>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center gap-2 flex-nowrap">
+              <span class="text-lg sm:text-2xl font-extrabold tracking-tight text-cream-50 whitespace-nowrap">
+                GÓC HẢI SẢN
+              </span>
+              <span class="badge-2026-rtl inline-flex items-center px-2 py-0.5 rounded-lg text-[10px] font-extrabold tracking-wider shadow whitespace-nowrap">
+                2026
+              </span>
+            </div>
+            <div class="text-[10px] sm:text-xs font-bold text-cream-200 tracking-wider uppercase whitespace-nowrap">
+              HẢI SẢN ĐÔNG LẠNH BIÊN HÒA
+            </div>
+          </div>
+        </div>
+
+        <!-- Nút thao tác -->
+        <div class="flex items-center gap-2 shrink-0">
+          <button id="headerAccountBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-ocean-900 hover:bg-ocean-800 text-cream-50 font-bold text-xs sm:text-sm border border-cream-200/40 shadow transition">
+            <svg class="w-4 h-4 text-cream-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <span id="headerAccountLabel">Đăng nhập</span>
+          </button>
+
+          <button id="openCartDrawerBtn" type="button" class="relative inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-cream-100 hover:bg-cream-50 text-ocean-950 font-extrabold text-xs sm:text-sm border border-cream-300 shadow transition">
+            <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+            <span>Giỏ hàng</span>
+            <span id="cartBadgeCount" class="ml-1 inline-flex items-center justify-center min-w-[20px] h-5 px-1 rounded-full bg-ocean-950 text-cream-100 text-xs font-extrabold">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- STOREFRONT VIEW -->
+  <main id="mainStorefrontView" class="space-y-12 pb-16">
+    <!-- Hero Banner -->
+    <section id="heroSection" class="relative py-8 sm:py-12 border-b border-cream-200/15">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 text-cream-200 text-xs font-bold uppercase tracking-wider">
+              <span>❄️ TỔNG KHO SỈ & LẺ HẢI SẢN NHẬP KHẨU BIÊN HÒA</span>
+            </div>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-cream-50 leading-tight">
+              Hải Sản Đông Lạnh Thượng Hạng — Giữ Trọn Vị Tươi Ngọt Đại Dương
+            </h1>
+            <p class="text-sm text-cream-100/85 leading-relaxed">
+              Phân phối trực tiếp 10 dòng hải sản cấp đông công nghệ IQF -40°C tại TP. Biên Hòa. Đảm bảo độ tươi ngon nguyên bản, đầy đủ chứng nhận ATVSTP.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-3">
+              <a href="#catalogSection" class="px-5 py-3 rounded-xl bg-cream-100 hover:bg-cream-50 text-ocean-950 font-extrabold text-xs sm:text-sm shadow transition">
+                Xem Bảng Giá Sản Phẩm
+              </a>
+            </div>
+          </div>
+          <div class="md:col-span-5">
+            <div class="rounded-3xl overflow-hidden dish-glow-card aspect-video sm:aspect-square relative">
+              <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80" alt="Hải sản đông lạnh" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Danh mục sản phẩm -->
+    <section id="catalogSection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="text-center space-y-2">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-cream-50">Bảng Giá Hải Sản Đông Lạnh 2026</h2>
+        <p class="text-xs sm:text-sm text-cream-200">Cam kết giá lẻ tốt nhất — Ưu đãi giảm ngay 15-25% cho đơn hàng Sỉ từ 10kg</p>
+      </div>
+
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- JS tự động render thẻ sản phẩm -->
+      </div>
+    </section>
+  </main>
+
+  <!-- CART SIDE DRAWER -->
+  <div id="cartSideDrawerBackdrop" class="fixed inset-0 z-50 hidden bg-ocean-950/80 backdrop-blur-sm transition-opacity"></div>
+  <aside id="cartSideDrawerPanel" class="fixed top-0 right-0 bottom-0 z-50 w-full max-w-md bg-ocean-950 border-l border-cream-200/30 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-4 bg-ocean-900 border-b border-cream-200/20 flex items-center justify-between">
+      <h3 class="font-extrabold text-cream-50 text-base">Giỏ Hàng Của Bạn</h3>
+      <button id="closeCartDrawerBtn" type="button" class="p-1 rounded-lg hover:bg-ocean-800 text-cream-200">✕</button>
+    </div>
+    <div id="drawerCartItemsList" class="flex-1 overflow-y-auto p-4 space-y-3">
+      <div class="text-center text-xs text-cream-200 py-8">Giỏ hàng đang trống</div>
+    </div>
+    <div class="p-4 bg-ocean-900 border-t border-cream-200/20 space-y-3">
+      <div class="flex justify-between text-sm font-extrabold">
+        <span>Tổng cộng:</span>
+        <span id="drawerSummaryTotal" class="text-cream-100">0đ</span>
+      </div>
+      <button id="drawerProceedCheckoutBtn" type="button" class="w-full py-3 rounded-xl bg-cream-100 hover:bg-cream-50 text-ocean-950 font-extrabold text-sm shadow transition">
+        Thanh Toán Ngay
+      </button>
+    </div>
+  </aside>
+
+  <!-- CHECKOUT PAGE -->
+  <section id="dedicatedCheckoutPageView" class="hidden py-8 sm:py-12 bg-ocean-950 min-h-screen">
+    <div class="max-w-4xl mx-auto px-4 space-y-6">
+      <button id="backToStoreFromCheckoutBtn" type="button" class="px-4 py-2 rounded-xl bg-ocean-900 text-cream-100 text-xs font-bold border border-cream-200/30">
+        ← Quay lại cửa hàng
+      </button>
+      <h1 class="text-2xl font-extrabold text-cream-50">Xác Nhận Đơn Hàng</h1>
+      <div class="glass-panel-contrast rounded-3xl p-6 space-y-4">
+        <h2 class="text-lg font-extrabold text-ocean-950">Thông Tin Giao Hàng</h2>
+        <input type="text" placeholder="Họ và tên..." class="w-full px-4 py-2.5 rounded-xl bg-cream-50 border border-ocean-950/20 text-ocean-950 text-sm focus:outline-none" />
+        <input type="tel" placeholder="Số điện thoại..." class="w-full px-4 py-2.5 rounded-xl bg-cream-50 border border-ocean-950/20 text-ocean-950 text-sm focus:outline-none" />
+        <textarea placeholder="Địa chỉ giao hàng tại Biên Hòa..." class="w-full px-4 py-2.5 rounded-xl bg-cream-50 border border-ocean-950/20 text-ocean-950 text-sm focus:outline-none" rows="3"></textarea>
+        <button type="button" onclick="alert('Đã nhận đơn hàng! Chúng tôi sẽ liên hệ Zalo/SĐT để xác nhận.')" class="w-full py-3.5 rounded-xl bg-ocean-950 text-cream-50 font-extrabold text-sm shadow">
+          XÁC NHẬN ĐẶT HÀNG
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTH MODAL -->
+  <div id="customerAuthModal" class="fixed inset-0 z-50 hidden bg-ocean-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-panel-contrast rounded-3xl max-w-sm w-full p-6 space-y-4 relative">
+      <button id="closeCustomerAuthModalBtn" type="button" class="absolute top-4 right-4 text-ocean-950 font-bold">✕</button>
+      <h3 class="text-xl font-extrabold text-ocean-950">Đăng Nhập Khách Hàng</h3>
+      <input type="text" placeholder="Số điện thoại..." class="w-full px-3.5 py-2 rounded-xl bg-cream-50 border border-ocean-950/30 text-ocean-950 text-sm" />
+      <input type="password" placeholder="Mật khẩu..." class="w-full px-3.5 py-2 rounded-xl bg-cream-50 border border-ocean-950/30 text-ocean-950 text-sm" />
+      <button type="button" onclick="document.getElementById('customerAuthModal').classList.add('hidden'); alert('Đăng nhập thành công!')" class="w-full py-3 rounded-xl bg-ocean-950 text-cream-50 font-bold text-sm">
+        Đăng Nhập
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Dữ liệu danh mục sản phẩm hải sản
+    const products = [
+      { id: 1, name: "Tôm Nõn Thẻ Hấp Đông IQF", spec: "Khay 500g (40-50 con)", retailPrice: 145000, wholesalePrice: 115000, img: "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=600&q=80" },
+      { id: 2, name: "Mực Ống Cấp Đông Nhập Khẩu", spec: "Khay 1kg (4-6 con)", retailPrice: 220000, wholesalePrice: 180000, img: "https://images.unsplash.com/photo-1545247181-516773cae754?auto=format&fit=crop&w=600&q=80" },
+      { id: 3, name: "Bạch Tuộc Cắt Khúc IQF", spec: "Túi 1kg", retailPrice: 165000, wholesalePrice: 135000, img: "https://images.unsplash.com/photo-1545247181-516773cae754?auto=format&fit=crop&w=600&q=80" },
+      { id: 4, name: "Cá Hồi Na Uy Cắt Thắt Lưng", spec: "Khay 500g", retailPrice: 280000, wholesalePrice: 235000, img: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80" },
+      { id: 5, name: "Vẹm Xanh New Zealand", spec: "Hộp 1kg", retailPrice: 210000, wholesalePrice: 175000, img: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" },
+      { id: 6, name: "Sò Điệp Nhật Bản Đông IQF", spec: "Túi 500g", retailPrice: 195000, wholesalePrice: 160000, img: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" }
+    ];
+
+    let cart = [];
+
+    // Render danh sách sản phẩm
+    const productGrid = document.getElementById('productGrid');
+    if (productGrid) {
+      productGrid.innerHTML = products.map(p => `
+        <div class="glass-panel rounded-2xl overflow-hidden dish-glow-card flex flex-col justify-between">
+          <div class="h-48 overflow-hidden relative">
+            <img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover transition transform hover:scale-105 duration-300" />
+            <span class="absolute top-2 right-2 px-2.5 py-1 rounded-lg bg-ocean-950/80 text-cream-100 text-[11px] font-bold border border-cream-200/30">${p.spec}</span>
+          </div>
+          <div class="p-4 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-extrabold text-cream-50 text-base leading-snug">${p.name}</h3>
+              <div class="mt-2 space-y-1 text-xs">
+                <div class="flex justify-between text-cream-200">
+                  <span>Giá lẻ:</span>
+                  <strong class="text-cream-50 font-bold">${p.retailPrice.toLocaleString()}đ / kg</strong>
+                </div>
+                <div class="flex justify-between text-cream-100">
+                  <span>Giá sỉ (&ge;10kg):</span>
+                  <strong class="text-cream-100 font-extrabold">${p.wholesalePrice.toLocaleString()}đ / kg</strong>
+                </div>
+              </div>
+            </div>
+            <button onclick="addToCart(${p.id})" class="w-full py-2.5 rounded-xl bg-cream-100 hover:bg-cream-50 text-ocean-950 font-extrabold text-xs shadow transition">
+              + Thêm Vào Giỏ
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function addToCart(id) {
+      const prod = products.find(p => p.id === id);
+      if (!prod) return;
+      const existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ ...prod, qty: 1 });
+      }
+      updateCartUI();
+      openCartDrawer();
+    }
+
+    function updateCartUI() {
+      const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+      const totalPrice = cart.reduce((sum, item) => sum + (item.qty >= 10 ? item.wholesalePrice : item.retailPrice) * item.qty, 0);
+
+      document.getElementById('cartBadgeCount').textContent = totalQty;
+      document.getElementById('drawerSummaryTotal').textContent = totalPrice.toLocaleString() + 'đ';
+
+      const drawerList = document.getElementById('drawerCartItemsList');
+      if (cart.length === 0) {
+        drawerList.innerHTML = '<div class="text-center text-xs text-cream-200 py-8">Giỏ hàng đang trống</div>';
+      } else {
+        drawerList.innerHTML = cart.map(item => `
+          <div class="flex items-center justify-between p-3 rounded-xl bg-ocean-900 border border-cream-200/20 text-xs">
+            <div>
+              <div class="font-bold text-cream-50">${item.name}</div>
+              <div class="text-cream-200 text-[11px]">${(item.qty >= 10 ? item.wholesalePrice : item.retailPrice).toLocaleString()}đ x ${item.qty}</div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="changeQty(${item.id}, -1)" class="w-6 h-6 rounded bg-ocean-800 text-cream-50 font-bold">-</button>
+              <span class="font-bold text-cream-50">${item.qty}</span>
+              <button onclick="changeQty(${item.id}, 1)" class="w-6 h-6 rounded bg-ocean-800 text-cream-50 font-bold">+</button>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    function changeQty(id, delta) {
+      const item = cart.find(i => i.id === id);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) {
+        cart = cart.filter(i => i.id !== id);
+      }
+      updateCartUI();
+    }
+
+    // Xử lý bật/tắt Drawer Giỏ hàng
+    const cartDrawer = document.getElementById('cartSideDrawerPanel');
+    const backdrop = document.getElementById('cartSideDrawerBackdrop');
+
+    function openCartDrawer() {
+      cartDrawer.classList.remove('translate-x-full');
+      backdrop.classList.remove('hidden');
+    }
+    function closeCartDrawer() {
+      cartDrawer.classList.add('translate-x-full');
+      backdrop.classList.add('hidden');
+    }
+
+    document.getElementById('openCartDrawerBtn').addEventListener('click', openCartDrawer);
+    document.getElementById('closeCartDrawerBtn').addEventListener('click', closeCartDrawer);
+    backdrop.addEventListener('click', closeCartDrawer);
+
+    // Modal Đăng nhập
+    document.getElementById('headerAccountBtn').addEventListener('click', () => {
+      document.getElementById('customerAuthModal').classList.remove('hidden');
+    });
+    document.getElementById('closeCustomerAuthModalBtn').addEventListener('click', () => {
+      document.getElementById('customerAuthModal').classList.add('hidden');
+    });
+
+    // Chuyển trang sang Checkout
+    document.getElementById('drawerProceedCheckoutBtn').addEventListener('click', () => {
+      closeCartDrawer();
+      document.getElementById('mainStorefrontView').classList.add('hidden');
+      document.getElementById('dedicatedCheckoutPageView').classList.remove('hidden');
+      window.scrollTo(0, 0);
+    });
+
+    document.getElementById('backToStoreFromCheckoutBtn').addEventListener('click', () => {
+      document.getElementById('dedicatedCheckoutPageView').classList.add('hidden');
+      document.getElementById('mainStorefrontView').classList.remove('hidden');
+      window.scrollTo(0, 0);
+    });
+  </script>
+</body>
+</html>
