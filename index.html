@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>GÓC HẢI SẢN 2026 — Hải Sản Đông Lạnh Biên Hòa</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Work Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['"Work Sans"', 'system-ui', '-apple-system', 'sans-serif']
+          },
+          colors: {
+            ocean: {
+              950: '#071126',
+              900: '#0D1E40',
+              800: '#152C5B',
+              700: '#1F3E7A'
+            },
+            cream: {
+              50: '#FDF8F2',
+              100: '#F5E6D3',
+              200: '#E6CFB3',
+              300: '#D4B48C'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    *, body, h1, h2, h3, h4, p, span, a, button, input, select, textarea, table {
+      font-family: 'Work Sans', system-ui, -apple-system, sans-serif !important;
+    }
+    body {
+      background-color: #071126;
+      color: #F5E6D3;
+      overflow-x: hidden;
+    }
+    p, .text-justify, .description, .card-body, .policy-content {
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+    .glass-panel {
+      background: linear-gradient(145deg, rgba(21, 44, 91, 0.92) 0%, rgba(13, 30, 64, 0.96) 100%);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(245, 230, 211, 0.22);
+      box-shadow: 0 14px 32px -10px rgba(0, 0, 0, 0.65);
+    }
+    .glass-panel-contrast {
+      background: linear-gradient(145deg, #FDF8F2 0%, #F5E6D3 100%);
+      color: #071126;
+      border: 2px solid #D4B48C;
+      box-shadow: 0 20px 42px -12px rgba(0, 0, 0, 0.5);
+    }
+    .glass-nav {
+      background: rgba(7, 17, 38, 0.98);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1.5px solid rgba(245, 230, 211, 0.22);
+    }
+    .card-3d {
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .card-3d:hover {
+      transform: translateY(-4px);
+    }
+    .dish-glow-card {
+      border: 1.5px solid rgba(245, 230, 211, 0.22);
+      box-shadow: 0 14px 32px -10px rgba(0, 0, 0, 0.65);
+      animation: none !important;
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .dish-glow-card:hover {
+      transform: translateY(-4px);
+      animation: none !important;
+      border-color: #FDF8F2 !important;
+      box-shadow: 0 0 28px rgba(253, 248, 242, 0.82), 0 0 12px rgba(245, 230, 211, 0.6), inset 0 0 10px rgba(253, 248, 242, 0.18) !important;
+    }
+    .price-table-row {
+      background-color: transparent;
+      transition: background-color 0.24s ease, color 0.24s ease;
+    }
+    .price-table-row:hover {
+      background-color: #F5E6D3 !important;
+      color: #071126 !important;
+    }
+    .price-table-row:hover td,
+    .price-table-row:hover [data-prod-field="name"],
+    .price-table-row:hover [data-prod-field="retailPrice"],
+    .price-table-row:hover [data-prod-field="wholesalePrice"] {
+      color: #071126 !important;
+    }
+    .price-table-row:hover [data-prod-field="spec"] {
+      background-color: rgba(7, 17, 38, 0.1) !important;
+      color: #071126 !important;
+      border-color: rgba(7, 17, 38, 0.45) !important;
+    }
+    .nav-pill-hover {
+      background-color: #0D1E40;
+      color: #FDF8F2;
+      border: 1px solid rgba(245, 230, 211, 0.2);
+      transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+    }
+    .nav-pill-hover svg {
+      color: #FFFFFF;
+      stroke: #FFFFFF;
+      transition: color 0.25s ease, stroke 0.25s ease;
+    }
+    .nav-pill-hover:hover {
+      background-color: #F5E6D3 !important;
+      color: #071126 !important;
+      border-color: #D4B48C !important;
+    }
+    .nav-pill-hover:hover span {
+      color: #071126 !important;
+    }
+    .nav-pill-hover:hover svg {
+      color: #071126 !important;
+      stroke: #071126 !important;
+    }
+    .chk-option-card {
+      border: 1.5px solid rgba(7, 17, 38, 0.14) !important;
+      background-color: rgba(253, 248, 242, 0.72);
+      transition: border-color 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease;
+    }
+    .chk-option-card.chk-option-selected,
+    .chk-option-card:has(input[type="radio"]:checked) {
+      border: 2.5px solid #071126 !important;
+      background-color: #FDF8F2 !important;
+      box-shadow: 0 8px 20px -6px rgba(7, 17, 38, 0.22);
+    }
+    @keyframes rainbowTextFlow {
+      0% { background-position: 200% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .rainbow-text {
+      background: linear-gradient(90deg, #ff5e62, #ff9966, #f9d423, #43e97b, #38f9d7, #4facfe, #a18cd1, #ff5e62);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent !important;
+      animation: rainbowTextFlow 3.2s linear infinite;
+    }
+    @keyframes gradientRightToLeft {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+    .badge-2026-rtl {
+      background: linear-gradient(270deg, #F5E6D3, #D4B48C, #1F3E7A, #0D1E40, #D4B48C, #F5E6D3);
+      background-size: 200% 100%;
+      animation: gradientRightToLeft 3.5s linear infinite;
+      color: #FFFFFF;
+      border: 1px solid rgba(245, 230, 211, 0.75);
+      text-shadow: 0 1px 2px rgba(7, 17, 38, 0.85);
+    }
+    body.admin-active [contenteditable="true"] {
+      outline: 1.5px dashed rgba(245, 230, 211, 0.7);
+      outline-offset: 3px;
+      border-radius: 4px;
+      cursor: text;
+      transition: outline-color 0.2s ease, background-color 0.2s ease;
+    }
+    body.admin-active [contenteditable="true"]:hover,
+    body.admin-active [contenteditable="true"]:focus {
+      outline: 2px dashed #F5E6D3;
+      background-color: rgba(245, 230, 211, 0.15);
+    }
+    body.admin-active .logo-editable-wrapper {
+      outline: 2px dashed #F5E6D3;
+      outline-offset: 4px;
+    }
+    .admin-only {
+      display: none !important;
+    }
+    body.admin-active .admin-only {
+      display: inline-flex !important;
+    }
+    .admin-only-block {
+      display: none !important;
+    }
+    body.admin-active .admin-only-block.admin-box-open {
+      display: block !important;
+    }
+    body.admin-active #adminToolbar.admin-only-block {
+      display: block !important;
+    }
+    .modal-clean-scroll::-webkit-scrollbar {
+      width: 0px !important;
+      height: 0px !important;
+      display: none !important;
+    }
+    .modal-clean-scroll {
+      -ms-overflow-style: none !important;
+      scrollbar-width: none !important;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    @keyframes modalPopInSmooth {
+      0% {
+        opacity: 0;
+        transform: translateY(16px) scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    @keyframes backdropFadeInSmooth {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes pageSectionEnter {
+      0% {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes subBarSlideDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes leftToastSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-28px) scale(0.96);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+      }
+    }
+    .smooth-page-view {
+      animation: pageSectionEnter 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .smooth-subbar-anim {
+      animation: subBarSlideDown 0.34s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .smooth-drawer-panel {
+      transition: transform 0.42s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.35s ease !important;
+      will-change: transform;
+    }
+    .smooth-drawer-backdrop {
+      transition: opacity 0.35s cubic-bezier(0.22, 1, 0.36, 1) !important;
+      animation: backdropFadeInSmooth 0.32s ease forwards;
+    }
+    .smooth-modal-backdrop {
+      animation: backdropFadeInSmooth 0.28s ease forwards;
+    }
+    .smooth-modal-card {
+      animation: modalPopInSmooth 0.36s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .auth-view-transition {
+      animation: pageSectionEnter 0.32s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .left-toast-anim {
+      animation: leftToastSlideIn 0.38s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+  </style>
+</head>
+<body class="antialiased selection:bg-cream-200 selection:text-ocean-950">
+
+  <!-- ADMIN FLOATING CONTROL TOOLBAR (VISIBLE ONLY WHEN ADMIN IS UNLOCKED) -->
+  <div id="adminToolbar" class="admin-only-block sticky top-0 z-50 bg-ocean-900/95 backdrop-blur-md border-b-2 border-cream-200 px-3 sm:px-4 py-2.5 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2.5">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-ocean-800 border border-cream-200 text-white font-bold shrink-0">
+          <svg class="w-4 h-4 text-white stroke-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        </span>
+        <div>
+          <div class="text-xs font-extrabold uppercase tracking-wider text-cream-100">Chế độ Quản trị Admin</div>
+          <div class="text-[11px] text-cream-100/80 hidden sm:block">Nhấp vào bất kỳ chữ nào để sửa (kể cả tên, mô tả &amp; ảnh của các Món ăn gợi ý trong từng sản phẩm).</div>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center gap-1.5">
+        <button id="switchLogoDarkBtn" type="button" class="px-2.5 py-1.5 rounded-lg text-xs font-bold bg-ocean-950 text-cream-100 border border-cream-200/40 hover:bg-ocean-800 transition">
+          Logo Navy
+        </button>
+        <button id="switchLogoLightBtn" type="button" class="px-2.5 py-1.5 rounded-lg text-xs font-bold bg-cream-100 text-ocean-950 border border-cream-300 hover:bg-cream-50 transition">
+          Logo Kem
+        </button>
+        <button id="openLogoModalBtn" type="button" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-ocean-950 hover:bg-ocean-800 text-cream-100 border border-cream-200/40 transition">
+          <span>Đổi Logo</span>
+        </button>
+        <button id="toolbarOpenHeroImageBtn" type="button" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-ocean-950 hover:bg-ocean-800 text-cream-100 border border-cream-200/40 transition">
+          <span>Đổi Ảnh Hero</span>
+        </button>
+        <button id="openSocialConfigBtn" type="button" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-ocean-950 hover:bg-ocean-800 text-cream-100 border border-cream-200/40 transition">
+          <span>Link MXH</span>
+        </button>
+        <button id="openAddProductModalBtn" type="button" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-ocean-950 hover:bg-ocean-800 text-cream-100 border border-cream-200/40 transition">
+          <span>+ Thêm Món</span>
+        </button>
+        <button id="openMapConfigBtn" type="button" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-ocean-950 hover:bg-ocean-800 text-cream-100 border border-cream-200/40 transition">
+          <span>Link Maps</span>
+        </button>
+        <button id="openCloudModalBtn" type="button" class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-bold bg-ocean-950 hover:bg-ocean-800 text-cream-100 border border-cream-200/40 transition">
+          <span>Cloud</span>
+        </button>
+        <button id="publishLiveBtn" type="button" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-extrabold bg-cream-100 hover:bg-cream-50 text-ocean-950 shadow border border-cream-300 transition">
+          <span>Lưu Thay Đổi</span>
+        </button>
+        <button id="resetDefaultBtn" type="button" class="inline-flex items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-bold bg-ocean-950 hover:bg-ocean-800 text-cream-100/80 border border-cream-200/30 transition">
+          <span>Khôi phục</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header class="glass-nav sticky top-0 z-40 transition-all">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3">
+      <!-- Top Row: Brand Identity (Left) + Login/Hồ sơ, Cart & Menu Toggle (Right) -->
+      <div class="flex items-center justify-between gap-3">
+
+        <!-- Left: 2X Large Logo + Uncut Brand Name & Subtitle -->
+        <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+          <div id="headerLogoWrapper" class="logo-editable-wrapper relative group flex items-center justify-center h-[76px] w-[76px] sm:h-[104px] sm:w-[104px] shrink-0 overflow-hidden rounded-2xl border-2 border-cream-200 bg-ocean-900 shadow-xl transition">
+            <img
+              id="headerLogoImg"
+              src="https://via.placeholder.com/150/071126/FFFFFF?text=Logo"
+              alt="Logo Góc Hải Sản 2026 Biên Hòa"
+              class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+            />
+            <button
+              id="quickHeaderLogoEditBtn"
+              type="button"
+              class="admin-only absolute inset-0 bg-ocean-950/85 text-cream-100 text-xs font-extrabold flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100 transition"
+            >
+              <svg class="w-5 h-5 text-white stroke-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+              <span>Đổi Logo</span>
+            </button>
+          </div>
+
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center gap-2 sm:gap-2.5 flex-nowrap">
+              <span data-config-key="brandName" class="text-lg sm:text-2xl md:text-3xl font-extrabold tracking-tight text-cream-50 whitespace-nowrap">
+                GÓC HẢI SẢN
+              </span>
+              <span data-config-key="brandYearBadge" class="badge-2026-rtl inline-flex items-center px-2.5 py-0.5 rounded-lg text-[10px] sm:text-xs font-extrabold tracking-wider shadow-md whitespace-nowrap shrink-0">
+                2026
+              </span>
+            </div>
+            <div data-config-key="brandTagline" class="text-[10px] sm:text-xs md:text-sm font-bold text-cream-200 tracking-wider uppercase whitespace-nowrap mt-0.5">
+              HẢI SẢN ĐÔNG LẠNH BIÊN HÒA
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: "Đăng nhập" / "Hồ sơ" Button + Cart Button + Hamburger Toggle -->
+        <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+
+          <!-- Customer Account / "Đăng nhập" -> "Hồ sơ" Button (Requirement 6 & 7) -->
+          <div class="relative">
+            <button
+              id="headerAccountBtn"
+              type="button"
+              class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-2xl bg-ocean-900 hover:bg-ocean-800 text-cream-50 font-bold text-xs sm:text-sm border border-cream-200/40 shadow transition"
+            >
+              <svg class="w-4 h-4 text-white stroke-white shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span id="headerAccountLabel" data-config-key="headerLoginBtnText" class="whitespace-nowrap">Đăng nhập</span>
+            </button>
+          </div>
+
+          <!-- Clean "Giỏ hàng" Button -->
+          <button
+            id="openCartDrawerBtn"
+            type="button"
+            class="relative inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-2xl bg-ocean-800 hover:bg-ocean-700 text-cream-50 font-extrabold text-xs sm:text-sm border-2 border-cream-200 shadow-lg transition transform hover:-translate-y-0.5"
+          >
+            <svg class="w-4 h-4 stroke-[2.2] text-white stroke-white shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            <span data-config-key="headerCartBtnText" class="whitespace-nowrap">Giỏ hàng</span>
+            <span id="headerCartWeightBadge" class="inline-flex items-center justify-center min-w-[20px] h-[20px] px-1 rounded-full bg-cream-100 text-ocean-950 text-xs font-extrabold">
+              0
+            </span>
+          </button>
+
+          <!-- Hamburger Toggle Button -->
+          <button id="mobileMenuBtn" type="button" aria-label="Đóng mở thanh điều hướng" class="inline-flex items-center justify-center p-2.5 rounded-xl bg-ocean-900 hover:bg-ocean-800 text-white border border-cream-200/35 transition">
+            <svg class="w-5 h-5 text-white stroke-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- REQUIREMENT 7: EXPANDABLE "HỒ SƠ" SUB-BAR DIRECTLY BELOW THE HEADER BUTTONS (LIKE IMAGE 4) -->
+      <div
+        id="customerProfileMenu"
+        class="hidden smooth-subbar-anim mt-3 pt-3 border-t border-cream-200/25 space-y-2.5"
+      >
+        <div class="flex flex-wrap items-center justify-between gap-2 px-1 text-xs">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-cream-100"></span>
+            <span class="font-bold text-cream-200">Tài khoản đang đăng nhập:</span>
+            <strong id="profileMenuUserName" class="text-cream-50 font-extrabold">Khách hàng</strong>
+            <span id="profileMenuUserPhone" class="text-cream-200/80"></span>
+          </div>
+          <button
+            id="menuLogoutBtn"
+            type="button"
+            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-ocean-900 hover:bg-ocean-800 text-cream-200 hover:text-white border border-cream-200/25 text-[11px] font-bold transition"
+          >
+            <svg class="w-3.5 h-3.5 text-white stroke-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+            <span>Đăng xuất</span>
+          </button>
+        </div>
+
+        <!-- 3 Expandable Profile Pills Styled Like Image 4 -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs sm:text-sm">
+          <button
+            id="openProfileInfoMiniPageBtn"
+            type="button"
+            class="px-4 py-2.5 rounded-xl bg-ocean-900 hover:bg-ocean-800 text-cream-50 font-bold border border-cream-200/30 flex items-center justify-between transition shadow"
+          >
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-white stroke-white shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span data-config-key="profileSubItem1">Thông tin khách hàng</span>
+            </span>
+            <svg class="w-4 h-4 text-white stroke-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+
+          <button
+            id="menuOpenOrdersDrawerBtn"
+            type="button"
+            class="px-4 py-2.5 rounded-xl bg-cream-100 hover:bg-cream-50 text-ocean-950 font-extrabold border border-cream-300 flex items-center justify-between transition shadow"
+          >
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-ocean-950 stroke-ocean-950 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 16h6"/><path d="M19 13v6"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/></svg>
+              <span data-config-key="profileManageOrdersLabel">Quản lý đơn hàng</span>
+            </span>
+            <span id="profileOrdersCountBadge" class="px-2 py-0.5 rounded-full bg-ocean-950 text-cream-100 text-[11px] font-extrabold">2</span>
+          </button>
+
+          <button
+            id="openChangePasswordMiniPageBtn"
+            type="button"
+            class="px-4 py-2.5 rounded-xl bg-ocean-900 hover:bg-ocean-800 text-cream-50 font-bold border border-cream-200/30 flex items-center justify-between transition shadow"
+          >
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-white stroke-white shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span data-config-key="profileSubItem3">Thay đổi mật khẩu</span>
+            </span>
+            <svg class="w-4 h-4 text-white stroke-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- REQUIREMENT 8: 2x2 Navigation Grid Below Header Row -->
+      <div id="mobileNavDrawer" class="smooth-subbar-anim mt-3 pt-3 border-t border-cream-200/15 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm">
+        <a href="#heroSection" data-nav-return="home" class="nav-pill-hover px-4 py-2.5 rounded-xl font-bold flex items-center justify-between shadow-sm">
+          <span data-config-key="navItem1">Trang chủ</span>
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </a>
+        <a href="#catalogSection" data-nav-return="home" class="nav-pill-hover px-4 py-2.5 rounded-xl font-bold flex items-center justify-between shadow-sm">
+          <span data-config-key="navItem4">Bảng giá Sỉ &amp; Lẻ</span>
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/></svg>
+        </a>
+        <a href="#wholesaleCalculatorSection" data-nav-return="home" class="nav-pill-hover px-4 py-2.5 rounded-xl font-bold flex items-center justify-between shadow-sm">
+          <span data-config-key="navItem5">Tính giá sỉ (&gt;10kg)</span>
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+        </a>
+        <a href="#footerWarehouseSection" id="navContactScrollBtn" data-nav-return="home" class="nav-pill-hover px-4 py-2.5 rounded-xl font-bold flex items-center justify-between shadow-sm">
+          <span data-config-key="navItem7">Thông tin liên lạc</span>
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CART SIDE DRAWER -->
+  <div id="cartSideDrawerBackdrop" class="fixed inset-0 z-50 hidden smooth-drawer-backdrop bg-ocean-950/80 backdrop-blur-sm transition-opacity duration-300"></div>
+
+  <aside
+    id="cartSideDrawerPanel" data-smooth-drawer="true"
+    aria-label="Giỏ hàng Góc Hải Sản"
+    class="fixed top-0 right-0 bottom-0 z-50 w-full max-w-md bg-ocean-950 border-l-2 border-cream-200/50 shadow-2xl transform translate-x-full smooth-drawer-panel transition-transform duration-300 ease-out flex flex-col"
+  >
+    <div class="p-4 sm:p-5 bg-ocean-900 border-b border-cream-200/20 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <span class="w-10 h-10 rounded-2xl bg-ocean-800 border border-cream-200/50 text-white flex items-center justify-center shadow-md">
+          <svg class="w-5 h-5 text-white stroke-white stroke-[2.2]" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        </span>
+        <div>
+          <h3 data-config-key="drawerCartTitle" class="text-base sm:text-lg font-extrabold text-cream-50">Giỏ Hàng Của Bạn</h3>
+          <div id="drawerCartSubtitle" class="text-xs font-bold text-cream-200">Đang có 0 mặt hàng • Tổng 0 kg</div>
+        </div>
+      </div>
+      <button id="closeCartDrawerBtn" type="button" class="w-9 h-9 rounded-xl bg-ocean-800 hover:bg-ocean-700 text-white border border-cream-200/30 flex items-center justify-center transition">
+        <svg class="w-5 h-5 text-white stroke-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="px-4 sm:px-5 py-3 bg-ocean-900/70 border-b border-cream-200/20 space-y-2">
+      <div class="flex items-center justify-between text-xs">
+        <span data-config-key="drawerProgressLabel" class="font-bold text-cream-50">Tiến độ mở khóa GIÁ SỈ (Mốc 10KG):</span>
+        <span id="drawerTierBadge" class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-cream-100 text-ocean-950">Giá Lẻ (&lt;10kg)</span>
+      </div>
+      <div class="w-full h-2.5 bg-ocean-950 rounded-full overflow-hidden border border-cream-200/25">
+        <div id="drawerWholesaleProgressBar" class="h-full bg-cream-200 transition-all duration-300" style="width: 0%"></div>
+      </div>
+      <div id="drawerWholesaleHint" class="text-[11px] text-cream-100/90 font-medium">Chọn 10kg trở lên để mở khóa mức GIÁ SỈ toàn đơn!</div>
+    </div>
+
+    <div id="drawerCartItemsList" class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3"></div>
+
+    <div class="p-4 sm:p-5 bg-ocean-900 border-t border-cream-200/30 space-y-4">
+      <div class="space-y-1.5 text-xs sm:text-sm">
+        <div class="flex items-center justify-between text-cream-100/85">
+          <span data-config-key="drawerTotalWeightLabel">Tổng khối lượng:</span>
+          <span id="drawerSummaryWeight" class="font-extrabold text-cream-50">0 kg</span>
+        </div>
+        <div class="flex items-center justify-between text-cream-100">
+          <span data-config-key="drawerDiscountLabel">Tiết kiệm Giá Sỉ (&gt;=10kg):</span>
+          <span id="drawerSummarySavings" class="font-extrabold text-cream-50">-0đ</span>
+        </div>
+        <div class="pt-2 border-t border-cream-200/20 flex items-center justify-between">
+          <span data-config-key="drawerTotalPayLabel" class="text-sm font-extrabold text-cream-50 uppercase">Tạm tính:</span>
+          <span id="drawerSummaryTotal" class="text-xl sm:text-2xl font-extrabold text-cream-100">0đ</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2.5">
+        <button id="drawerAddMoreBtn" type="button" class="py-3 px-3 rounded-xl bg-ocean-800 hover:bg-ocean-700 text-cream-50 font-bold text-xs border border-cream-200/30 transition">+ Chọn thêm món</button>
+        <button id="drawerProceedCheckoutBtn" type="button" class="py-3 px-4 rounded-xl bg-cream-100 hover:bg-cream-50 text-ocean-950 font-extrabold text-xs sm:text-sm shadow-lg border border-cream-300 flex items-center justify-center gap-1.5 transition">
+          <span data-config-key="drawerCheckoutBtnText">Thanh Toán Ngay</span>
+          <svg class="w-4 h-4 text-ocean-950 stroke-ocean-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- STOREFRONT SECTION -->
+  <main id="mainStorefrontView" class="smooth-page-view">
+    <section id="heroSection" class="relative py-8 sm:py-12 border-b border-cream-200/15">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-7 lg:gap-10 md:items-stretch">
+          <div class="md:col-span-7 flex flex-col justify-between space-y-5">
+            <div class="space-y-4">
+              <div class="inline-flex items-center gap-2 text-cream-200 text-xs sm:text-sm font-bold uppercase tracking-wider">
+                <svg class="w-4 h-4 shrink-0 text-white stroke-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="m4.93 4.93 14.14 14.14"/><path d="M2 12h20"/><path d="m4.93 19.07 14.14-14.14"/></svg>
+                <span data-config-key="heroBadgeText">TỔNG KHO SỈ &amp; LẺ HẢI SẢN NHẬP KHẨU BIÊN HÒA</span>
+              </div>
+              <h1 data-config-key="heroHeadline" class="text-2xl sm:text-4xl lg:text-[42px] font-extrabold text-cream-50 leading-[1.15] tracking-tight">
+                Hải Sản Đông Lạnh Thượng Hạng — Giữ Trọn Vị Tươi Ngọt Đại Dương
+              </h1>
+              <p data-config-key="heroSubheadline" class="description text-sm sm:text-base text-cream-100/85 leading-relaxed">
+                Phân phối trực tiếp 10 dòng hải sản nhập khẩu cấp đông IQF -40°C tại TP. Biên Hòa. Nhấp trực tiếp vào ảnh từng món để mở ngăn trượt xem chi tiết thực đơn chế biến và đặt hàng nhanh.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <a href="#catalogSection" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-2xl bg-cream-100 hover:bg-cream-50 text-ocean-950 font-extrabold text-xs sm:text-sm shadow-lg border border-cream-300 transition">
+                <span data-config-key="heroPrimaryCta">Xem Bảng Giá 10 Món</span>
+              </a>
+            </div>
+          </div>
+          <div class="md:col-span-5 flex flex-col">
+            <div id="heroImageCardWrapper" class="relative flex-1 w-full h-full rounded-3xl overflow-hidden dish-glow-card shadow-2xl group min-h-[250px] md:min-h-0">
+              <img id="heroBannerImg" src="https://via.placeholder.com/600x400/071126/FFFFFF?text=Hai+San+Dong+Lanh" alt="Hải Sản" class="w-full h-full md:absolute md:inset-0 object-cover transition duration-700 group-hover:scale-105" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CHECKOUT PAGE -->
+  <section id="dedicatedCheckoutPageView" class="hidden smooth-page-view py-8 sm:py-12 bg-ocean-950 min-h-screen border-b border-cream-200/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+
+      <div class="flex flex-wrap items-center justify-between gap-4 pb-5 border-b border-cream-200/20">
+        <div class="flex flex-wrap items-center gap-3">
+          <button id="backToStoreFromCheckoutBtn" type="button" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-ocean-900 hover:bg-ocean-800 text-cream-100 border border-cream-200/30 text-xs sm:text-sm font-bold transition">
+            <svg class="w-4 h-4 text-white stroke-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            <span data-config-key="checkoutBackBtnText">Quay lại Cửa hàng</span>
+          </button>
+          <h1 data-config-key="checkoutPageMainTitle" class="text-2xl sm:text-4xl font-extrabold text-cream-50 tracking-tight">Checkout — Thanh Toán Đơn Hàng</h1>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+        <!-- LEFT COLUMN: ORDER INFO -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- STEP 1: SHIPPING ADDRESS -->
+          <div class="relative flex gap-3 sm:gap-4">
+            <div class="flex flex-col items-center">
+              <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-cream-100 text-ocean-950 font-extrabold text-xs sm:text-sm flex items-center justify-center shrink-0 shadow">1</div>
+              <div class="w-0.5 flex-1 bg-cream-200/25 my-2"></div>
+            </div>
+            <div class="flex-1 glass-panel-contrast rounded-3xl p-5 sm:p-6 space-y-4">
+              <div>
+                <h2 data-config-key="checkoutStep1Title" class="text-lg sm:text-xl font-extrabold text-ocean-950">1. Địa Chỉ Giao Hàng (Shipping Address)</h2>
+                <p data-config-key="checkoutStep1Sub" class="text-xs text-ocean-900/80 mt-0.5">Hỗ trợ giao hỏa tốc tận nơi tại TP. Biên Hòa, Đồng Nai.</p>
+              </div>
+              <!-- Form Fields -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div>
+                  <label class="block text-[11px] font-extrabold uppercase tracking-wider text-ocean-950 mb-1">HỌ &amp; TÊN NGƯỜI NHẬN *</label>
+                  <input type="text" required placeholder="Nguyễn Văn An" class="w-full px-3.5 py-2.5 rounded-xl bg-cream-50 border border-ocean-950/30 text-sm text-ocean-950 font-medium focus:outline-none focus:border-ocean-950" />
+                </div>
+                <div>
+                  <label class="block text-[11px] font-extrabold uppercase tracking-wider text-ocean-950 mb-1">SỐ ĐIỆN THOẠI / ZALO *</label>
+                  <input type="tel" required placeholder="0909 xxx xxx" class="w-full px-3.5 py-2.5 rounded-xl bg-cream-50 border border-ocean-950/30 text-sm text-ocean-950 font-medium focus:outline-none focus:border-ocean-950" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 2: SHIPPING METHOD -->
+          <div class="relative flex gap-3 sm:gap-4">
+            <div class="flex flex-col items-center">
+              <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-cream-100 text-ocean-950 font-extrabold text-xs sm:text-sm flex items-center justify-center shrink-0 shadow">2</div>
+              <div class="w-0.5 flex-1 bg-cream-200/25 my-2"></div>
+            </div>
+            <div class="flex-1 glass-panel-contrast rounded-3xl p-5 sm:p-6 space-y-4">
+              <h2 data-config-key="checkoutStep2Title" class="text-lg sm:text-xl font-extrabold text-ocean-950">2. Phương Thức Vận Chuyển</h2>
+              <div class="space-y-2.5">
+                <label class="chk-option-card chk-option-selected flex items-start gap-3 p-3.5 rounded-2xl cursor-pointer">
+                  <input type="radio" name="chkShippingMethod" value="Hỏa tốc Biên Hòa" checked class="mt-1 accent-ocean-950" />
+                  <div class="flex-1 text-xs sm:text-sm">
+                    <div class="flex items-center justify-between font-extrabold text-ocean-950">
+                      <span>Giao Hỏa Tốc Nội Thành Biên Hòa</span>
+                      <span>MIỄN PHÍ</span>
+                    </div>
+                    <p class="text-xs text-ocean-900/80 mt-0.5">Đóng thùng xốp ướp đá gel âm sâu -18°C.</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3: PAYMENT METHODS -->
+          <div class="relative flex gap-3 sm:gap-4">
+            <div class="flex flex-col items-center">
+              <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-cream-100 text-ocean-950 font-extrabold text-xs sm:text-sm flex items-center justify-center shrink-0 shadow">3</div>
+            </div>
+            <div class="flex-1 glass-panel-contrast rounded-3xl p-5 sm:p-6 space-y-4">
+              <h2 data-config-key="checkoutStep3Title" class="text-lg sm:text-xl font-extrabold text-ocean-950">3. Phương Thức Thanh Toán</h2>
+              <div id="checkoutPaymentMethodsList" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <label class="chk-option-card chk-option-selected flex items-start gap-3 p-3.5 rounded-2xl cursor-pointer">
+                  <input type="radio" name="chkPaymentMethod" value="Thanh toán tiền mặt khi nhận hàng (COD)" checked class="mt-1 accent-ocean-950" />
+                  <div class="flex-1 text-xs sm:text-sm">
+                    <div class="font-extrabold text-ocean-950">Thanh toán tiền mặt (COD)</div>
+                    <p class="text-xs text-ocean-900/80 mt-0.5">Nhận hàng, kiểm tra và thanh toán trực tiếp.</p>
+                  </div>
+                </label>
+
+                <label class="chk-option-card flex items-start gap-3 p-3.5 rounded-2xl cursor-pointer">
+                  <input type="radio" name="chkPaymentMethod" value="Chuyển khoản ngân hàng (Quét mã QR)" class="mt-1 accent-ocean-950" />
+                  <div class="flex-1 text-xs sm:text-sm">
+                    <div class="font-extrabold text-ocean-950">Chuyển khoản (Quét mã QR)</div>
+                    <p class="text-xs text-ocean-900/80 mt-0.5">Tiện lợi, an toàn và xác nhận nhanh chóng.</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: KIỂM TRA & HOÀN TẤT ĐẶT HÀNG -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="glass-panel-contrast rounded-3xl p-5 sm:p-6 space-y-5 sticky top-24">
+            <h2 class="text-lg sm:text-xl font-extrabold text-ocean-950 border-b border-ocean-950/15 pb-3">4. Hoàn Tất Đặt Hàng</h2>
+
+            <div id="checkoutCartItems" class="space-y-3 max-h-[250px] overflow-y-auto pr-1">
+              <!-- Render items dynamically -->
+            </div>
+
+            <div class="pt-3 border-t border-ocean-950/15">
+              <label class="block text-[11px] font-extrabold uppercase tracking-wider text-ocean-950 mb-1">MÃ GIẢM GIÁ / VOUCHER</label>
+              <div class="flex gap-2">
+                <input type="text" id="chkPromoCodeInput" placeholder="Nhập mã..." class="w-full px-3 py-2 rounded-xl bg-cream-50 border border-ocean-950/30 text-sm focus:outline-none focus:border-ocean-950" />
+                <button type="button" id="chkApplyPromoBtn" class="px-4 py-2 rounded-xl bg-ocean-950 text-cream-50 font-bold text-xs hover:bg-ocean-800 transition">Áp Dụng</button>
+              </div>
+            </div>
+
+            <div class="space-y-2 pt-3 border-t border-ocean-950/15 text-sm">
+              <div class="flex justify-between text-ocean-950/80 font-medium">
+                <span>Tạm tính (<span id="chkSummaryCount">0</span> món):</span>
+                <span id="chkSummarySubtotal" class="font-bold text-ocean-950">0đ</span>
+              </div>
+              <div class="flex justify-between text-ocean-950/80 font-medium">
+                <span>Phí vận chuyển:</span>
+                <span id="chkSummaryShipping" class="font-bold text-ocean-950">0đ</span>
+              </div>
+              <div class="flex justify-between text-ocean-950/80 font-medium text-green-700">
+                <span>Giảm giá Voucher:</span>
+                <span id="chkSummaryDiscount" class="font-bold">-0đ</span>
+              </div>
+              <div class="flex justify-between items-end pt-3 border-t border-ocean-950/15">
+                <span class="font-extrabold text-ocean-950">TỔNG CỘNG:</span>
+                <span id="chkSummaryTotal" class="text-2xl font-extrabold text-ocean-950">0đ</span>
+              </div>
+            </div>
+
+            <button id="finalPlaceOrderBtn" type="button" class="w-full py-4 rounded-2xl bg-ocean-950 hover:bg-ocean-800 text-cream-50 font-extrabold text-sm sm:text-base shadow-lg flex items-center justify-center gap-2 transition transform hover:-translate-y-0.5">
+              <svg class="w-5 h-5 text-white stroke-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              <span>HOÀN TẤT VÀ ĐẶT HÀNG</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
